@@ -1,58 +1,168 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ERP Neosantara
+
+ERP Neosantara merupakan aplikasi **Enterprise Resource Planning (ERP)** sederhana yang dikembangkan sebagai tugas mata kuliah **Enterprise Resource Planning (ERP)**.
+
+Aplikasi ini dibangun menggunakan **Laravel 12** dan **FilamentPHP v5** untuk membantu perusahaan dalam mengelola proses bisnis pada bidang pemasaran dan gudang.
+
+---
+
+## 👥 Tim Pengembang
+
+| Nama | Peran |
+|------|------|
+| **Indra Pramudya** | Ketua Kelompok & Modul Pencarian Prospek Pelanggan |
+| **Adrian Havis Yandisa** | Modul Kampanye Pemasaran |
+| **Soaloon MT Sianturi** | Modul Pengelolaan Stok Barang di Gudang |
+
+---
+
+## 📌 Studi Kasus
+
+ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis melalui tiga modul utama:
+
+- 📋 Pencarian Prospek Pelanggan
+- 📢 Kampanye Pemasaran
+- 📦 Pengelolaan Stok Barang di Gudang
+
+---
+
+# ✨ Tampilan Aplikasi
+
+## Login
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="screenshots/login.png" width="900">
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Dashboard
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img src="screenshots/dashboard.png" width="900">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Modul Prospek Pelanggan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<p align="center">
+  <img src="screenshots/prospects.png" width="900">
+</p>
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Modul Kampanye Pemasaran
 
-## Agentic Development
+<p align="center">
+  <img src="screenshots/campaigns.png" width="900">
+</p>
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+---
 
-```bash
-composer require laravel/boost --dev
+## Modul Pengelolaan Stok Barang
 
-php artisan boost:install
+<p align="center">
+  <img src="screenshots/products.png" width="900">
+</p>
+
+---
+
+## ✨ Fitur
+
+### 📋 Pencarian Prospek Pelanggan
+
+- Menambah data prospek
+- Mengubah data prospek
+- Menghapus data prospek
+- Melakukan pencarian prospek
+- Mengelola status prospek
+
+---
+
+### 📢 Kampanye Pemasaran
+
+- Menambah data kampanye
+- Mengubah data kampanye
+- Menghapus data kampanye
+- Mengelola anggaran kampanye
+- Mengatur periode kampanye
+
+---
+
+### 📦 Pengelolaan Stok Barang
+
+- Menambah data produk
+- Mengubah data produk
+- Menghapus data produk
+- Mengelola stok barang
+- Mengelola batas minimum stok
+
+---
+
+## 🛠️ Teknologi
+
+- Laravel 12
+- FilamentPHP v5
+- PHP 8.3+
+- SQLite
+- Composer
+- Git
+- GitHub
+
+---
+
+## 📂 Struktur Modul
+
+```text
+Dashboard
+│
+├── CRM
+│   └── Prospek Pelanggan
+│
+├── Marketing
+│   └── Kampanye Pemasaran
+│
+└── Warehouse
+    └── Pengelolaan Stok Barang
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 🚀 Cara Menjalankan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone https://github.com/aindragt/ERP-Neosantara.git
 
-## Code of Conduct
+cd ERP-Neosantara
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+composer install
 
-## Security Vulnerabilities
+cp .env.example .env
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+php artisan key:generate
 
-## License
+php artisan migrate --seed
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+php artisan serve
+```
+
+---
+
+## 🔐 Login Default
+
+| Email | Password |
+|--------|----------|
+| admin@neosantara.com | password |
+
+---
+
+## 🎯 Tujuan
+
+ERP Neosantara dikembangkan sebagai implementasi konsep Enterprise Resource Planning (ERP) menggunakan Laravel dan FilamentPHP. Sistem ini mengintegrasikan pengelolaan prospek pelanggan, kampanye pemasaran, dan stok barang ke dalam satu aplikasi berbasis web yang sederhana dan mudah digunakan.
+
+---
+
+## 📄 Lisensi
+
+Project ini dibuat untuk memenuhi tugas mata kuliah **Enterprise Resource Planning (ERP)**.
