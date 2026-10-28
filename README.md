@@ -39,7 +39,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Dashboard
 
 <p align="center">
-  <img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/e2f5b2f8-365a-461b-9c2b-dafbc4b479ad" />
+  <img width="947" height="475" alt="image" src="https://github.com/user-attachments/assets/2e841dbd-0203-48a4-9d24-faa2872e28a2" />
 </p>
 
 ---
@@ -47,7 +47,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Modul Prospek Pelanggan
 
 <p align="center">
-  <img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/11cd960d-eaa9-4d09-8c3e-bde2e03f9102" />
+    <img width="953" height="477" alt="image" src="https://github.com/user-attachments/assets/cb54edba-963d-4a9e-bd1a-8cc31e504d83" />
 </p>
 
 ---
@@ -55,7 +55,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Modul Kampanye Pemasaran
 
 <p align="center">
-  <img width="953" height="479" alt="image" src="https://github.com/user-attachments/assets/e8be1692-bde7-4084-9823-6a5239dca694" />
+  <img width="954" height="475" alt="image" src="https://github.com/user-attachments/assets/fdbff722-053d-4e69-bb7a-ca043eee4348" />
 </p>
 
 ---
@@ -63,7 +63,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Modul Pengelolaan Stok Barang
 
 <p align="center">
-  <img src="screenshots/products.png" width="900">
+  <img width="954" height="478" alt="image" src="https://github.com/user-attachments/assets/db9f98a1-0202-4ae0-a307-e4142d50d75e" />
 </p>
 
 ---
