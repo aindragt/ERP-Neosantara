@@ -31,7 +31,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Login
 
 <p align="center">
-  <img src="screenshots/login.png" width="900">
+  <img width="1917" height="901" alt="image" src="https://github.com/user-attachments/assets/3e7f29be-a3ff-4348-a3cd-7a534b25afc1" />
 </p>
 
 ---
@@ -39,7 +39,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Dashboard
 
 <p align="center">
-  <img src="screenshots/dashboard.png" width="900">
+  <img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/e2f5b2f8-365a-461b-9c2b-dafbc4b479ad" />
 </p>
 
 ---
