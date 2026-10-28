@@ -8,13 +8,11 @@ class Product extends Model
 {
     protected $fillable = [
     'name',
-    'code',
     'category',
     'stock',
     'minimum_stock',
     'price',
     'description',
-    'image',
 ];
 
     protected function casts(): array
@@ -22,7 +20,7 @@ class Product extends Model
         return [
             'stock' => 'integer',
             'minimum_stock' => 'integer',
-            'price' => 'decimal:2',
+            'price'  => 'decimal:2', 
         ];
     }
 
