@@ -55,7 +55,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Modul Kampanye Pemasaran
 
 <p align="center">
-  <img src="screenshots/campaigns.png" width="900">
+  <img width="953" height="479" alt="image" src="https://github.com/user-attachments/assets/e8be1692-bde7-4084-9823-6a5239dca694" />
 </p>
 
 ---
