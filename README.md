@@ -47,7 +47,7 @@ ERP Neosantara dirancang untuk membantu perusahaan dalam mengelola proses bisnis
 ## Modul Prospek Pelanggan
 
 <p align="center">
-  <img src="screenshots/prospects.png" width="900">
+  <img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/11cd960d-eaa9-4d09-8c3e-bde2e03f9102" />
 </p>
 
 ---
