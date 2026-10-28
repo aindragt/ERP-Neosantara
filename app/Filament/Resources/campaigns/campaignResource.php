@@ -12,13 +12,15 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
-use campaign;
+use UnitEnum;
 
 class campaignResource extends Resource
 {
-    protected static ?string $model = campaign::class;
+    protected static ?string $model = \App\Models\campaign::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|UnitEnum|null $navigationGroup = 'Marketing';
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::BuildingStorefront;
 
     protected static ?string $recordTitleAttribute = 'name';
 
