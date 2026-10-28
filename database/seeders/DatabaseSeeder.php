@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\campaign;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
+            ProspectSeeder::class,
         ]);
+        campaign::factory(10)->create();
     }
 }
