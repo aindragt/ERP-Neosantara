@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
+            ProspectSeeder::class,
         ]);
         campaign::factory(10)->create();
     }
