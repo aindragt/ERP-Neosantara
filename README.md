@@ -2,7 +2,7 @@
 
 ERP Neosantara merupakan aplikasi **Enterprise Resource Planning (ERP)** sederhana yang dikembangkan sebagai tugas mata kuliah **Enterprise Resource Planning (ERP)**.
 
-Aplikasi ini dibangun menggunakan **Laravel 12** dan **FilamentPHP v5** untuk membantu perusahaan dalam mengelola proses bisnis pada bidang pemasaran dan gudang.
+Aplikasi ini dibangun menggunakan **Laravel 13** dan **FilamentPHP v5** untuk membantu perusahaan dalam mengelola proses bisnis pada bidang pemasaran dan gudang.
 
 ---
 
