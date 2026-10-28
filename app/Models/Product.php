@@ -7,14 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'code',
-        'name',
-        'category',
-        'stock',
-        'minimum_stock',
-        'price',
-        'description',
-    ];
+    'name',
+    'code',
+    'category',
+    'stock',
+    'minimum_stock',
+    'price',
+    'description',
+    'image',
+];
 
     protected function casts(): array
     {

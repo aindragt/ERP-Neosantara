@@ -17,7 +17,9 @@ return new class extends Migration
             $table->unsignedInteger('minimum_stock')->default(5);
             $table->decimal('price', 15, 2)->default(0);
             $table->text('description')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
+
         });
     }
 

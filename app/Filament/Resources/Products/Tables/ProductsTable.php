@@ -2,7 +2,9 @@
 
 namespace App\Filament\Resources\Products\Tables;
 
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
@@ -12,13 +14,14 @@ class ProductsTable
 {
     public static function configure(Table $table): Table
     {
-         return $table
+        return $table
             ->columns([
-                TextColumn::make('code')
-                    ->label('Kode Barang')
-                    ->searchable()
-                    ->sortable(),
 
+                ImageColumn::make('image')
+                    ->label('Gambar')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->square(),
                 TextColumn::make('name')
                     ->label('Nama Barang')
                     ->searchable()
@@ -30,46 +33,27 @@ class ProductsTable
 
                 TextColumn::make('stock')
                     ->label('Stok')
-                    ->numeric()
                     ->sortable(),
 
                 TextColumn::make('minimum_stock')
-                    ->label('Stok Minimum')
-                    ->numeric(),
+                    ->label('Minimum Stok'),
 
                 TextColumn::make('price')
                     ->label('Harga')
-                    ->money('IDR', locale: 'id'),
+                    ->money('IDR'),
 
                 TextColumn::make('stock_status')
                     ->label('Status Stok')
-                    ->badge()
-                    ->color(fn (Product $record): string =>
+                    ->state(fn ($record) =>
                         $record->stock <= $record->minimum_stock
+                            ? 'Stok Menipis'
+                            : 'Aman'
+                    )
+                    ->badge()
+                    ->color(fn ($state) =>
+                        $state === 'Stok Menipis'
                             ? 'danger'
                             : 'success'
-                    ),
-            ])
-            ->filters([
-                Filter::make('low_stock')
-                    ->label('Stok Menipis')
-                    ->query(fn (Builder $query): Builder =>
-                        $query->whereColumn(
-                            'stock',
-                            '<=',
-                            'minimum_stock'
-                        )
-                    ),
-
-                SelectFilter::make('category')
-                    ->label('Kategori')
-                    ->options(fn (): array =>
-                        Product::query()
-                            ->whereNotNull('category')
-                            ->distinct()
-                            ->orderBy('category')
-                            ->pluck('category', 'category')
-                            ->all()
                     ),
             ])
             ->recordActions([
@@ -80,7 +64,6 @@ class ProductsTable
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),
-            ])
-            ->defaultSort('name');
+            ]);
     }
 }
