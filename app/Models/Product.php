@@ -13,6 +13,7 @@ class Product extends Model
     'minimum_stock',
     'price',
     'description',
+    'code',
 ];
 
     protected function casts(): array

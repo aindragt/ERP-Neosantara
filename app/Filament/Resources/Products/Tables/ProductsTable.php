@@ -17,11 +17,6 @@ class ProductsTable
         return $table
             ->columns([
 
-                ImageColumn::make('image')
-                    ->label('Gambar')
-                    ->disk('public')
-                    ->visibility('public')
-                    ->square(),
                 TextColumn::make('name')
                     ->label('Nama Barang')
                     ->searchable()
