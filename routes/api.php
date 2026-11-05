@@ -10,8 +10,13 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
 
-    Route::get('/prospects', [ProspectController::class, 'index']);
+    // Route::get('/prospects', [ProspectController::class, 'index']);
 
     Route::post('/prospects', [ProspectController::class, 'store']);
+
+    Route::apiResource(
+        'prospects',
+        ProspectController::class
+    );
 
 });
